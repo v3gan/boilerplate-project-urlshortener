@@ -2,6 +2,7 @@ var express = require('express');
 var ShortUrl = require('../models/shorturl');
 var router = express.Router();
 const { body, validationResult } = require('express-validator');
+require('dotenv').config();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
